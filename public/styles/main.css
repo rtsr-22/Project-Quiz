@@ -1,0 +1,139 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+
+}
+
+/* Quiz Question Division */
+
+ h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#quizQuesDiv p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Input Styling */
+#userInput {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    overflow: hidden;
+
+}
+
+#userInput:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.7);
+}
+
+/* Button Styling */
+#button {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+#button:hover {
+    background: linear-gradient(135deg, #dd2476, #ff512f);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #quizQuesDiv h2 {
+        font-size: 1.5rem;
+    }
+
+    #quizQuesDiv p {
+        font-size: 0.9rem;
+    }
+
+    #button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional Styling for Span */
+#quizQuesDiv span {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+
+.restart-button{
+     
+        display: inline-block;
+        padding: 0.9rem 1.8rem;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        border: 3px solid rgb(252, 70, 100);
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+        font-family: inherit;
+       }
+       
+       .restart-button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(252, 70, 100);
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+       }
+       
+       .restart-button:hover::before {
+        transform: translateX(0);
+       }
+
